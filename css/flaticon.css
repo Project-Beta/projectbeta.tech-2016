@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("/assets/fonts/flaticon.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.flaticon-about:before { content: "\f100"; }
+.flaticon-amazon:before { content: "\f101"; }
+.flaticon-audio-video:before { content: "\f102"; }
+.flaticon-bars:before { content: "\f103"; }
+.flaticon-book:before { content: "\f104"; }
+.flaticon-classified:before { content: "\f105"; }
+.flaticon-code:before { content: "\f106"; }
+.flaticon-controller:before { content: "\f107"; }
+.flaticon-cross:before { content: "\f108"; }
+.flaticon-design:before { content: "\f109"; }
+.flaticon-details:before { content: "\f10a"; }
+.flaticon-discussion:before { content: "\f10b"; }
+.flaticon-email:before { content: "\f10c"; }
+.flaticon-facebook:before { content: "\f10d"; }
+.flaticon-flaticon:before { content: "\f10e"; }
+.flaticon-form:before { content: "\f10f"; }
+.flaticon-heart:before { content: "\f110"; }
+.flaticon-home:before { content: "\f111"; }
+.flaticon-map:before { content: "\f112"; }
+.flaticon-members:before { content: "\f113"; }
+.flaticon-microsoft:before { content: "\f114"; }
+.flaticon-oculus:before { content: "\f115"; }
+.flaticon-pc:before { content: "\f116"; }
+.flaticon-phone:before { content: "\f117"; }
+.flaticon-photo:before { content: "\f118"; }
+.flaticon-prize:before { content: "\f119"; }
+.flaticon-programming:before { content: "\f11a"; }
+.flaticon-quiz:before { content: "\f11b"; }
+.flaticon-repeat:before { content: "\f11c"; }
+.flaticon-school:before { content: "\f11d"; }
+.flaticon-star:before { content: "\f11e"; }
+.flaticon-web-design:before { content: "\f11f"; }
+.flaticon-win:before { content: "\f120"; }

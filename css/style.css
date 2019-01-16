@@ -1,0 +1,739 @@
+/*  
+ *
+ * (C) ProjectBeta 2016
+ * Designed by </KSL>
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,100);
+
+/* General */
+/* Body */
+body, html {    
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    background-color: #fff;
+}
+
+/* Buttons */
+.button {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 40%;
+}
+
+.button1 {
+    background-color: #555555;
+    color: #35316f;
+    border: 2px solid #35316f;
+    
+
+}
+
+.button1:hover {
+    background-color: #35316f;
+    color: white;
+}
+
+/* Selection */
+::selection {
+    background-color: #bac;
+    color: #fff;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Code Light;
+    src: url(/assets/fonts/CODE-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Code Bold;
+    src: url(/assets/fonts/CODE-Bold.otf) format("opentype");
+}
+
+iframe {
+    position: relative;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    border:0;
+    overflow: hidden;
+}
+
+/* Dividers */
+br.divider {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hyphens */
+span.hyphen {
+    color: deeppink;
+    float: left;
+}
+
+/* General Links */
+a:link,
+a:visited {
+    text-decoration: none;   
+}
+a.link:link,
+a.link:visited {
+    color: hotpink;
+    text-decoration: none;
+}
+a.link:hover,
+a.link:visited:hover,
+a.link:focus {
+    color: deeppink;
+    text-decoration: none;
+    border-bottom: 1px dotted deeppink;
+}
+
+/* Main */
+/* Main Div */
+div.main {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/images/bgMain.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+/* 3 Bars Nav Toggle */
+span.navToggle {
+    width: 95%;
+    color: rgba(255,255,255,0.7);
+    text-align: right;
+    font-family: Flaticon;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    top: 30px;
+    left: 0;
+    position: absolute;
+    visibility: visible;
+    transition: 0.8s;
+    transition-delay: 0;
+}
+/* Nav Toggle Hover */
+span.navToggle:hover {
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+/* Main Navigation (Hidden) */
+nav {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(30,60,90,0.8);
+    z-index: 9999;
+    position: absolute;
+    position: fixed;
+    visibility: hidden;
+    transition: 0.8s;
+    transform: translateY(-100%);
+    
+}
+
+/* Nav Visible */
+nav.visible {
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.8s;
+}
+
+/* Nav Toggle Hidden */
+span.hidden {
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+/* Cross Nav close */
+span.navClose {
+    width: 95%;
+    color: #fff;
+    text-align: right;
+    font-family: Flaticon;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    top: 30px;
+    left: 0;
+    position: absolute;
+    visibility: visible;
+    transition: 0.8s;
+    transition-delay: 0;
+}
+
+/* cross nav close hover */
+span.navClose:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Nav ul */
+ul {
+    display: inline-block;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    position: relative;
+    color: #fff;
+    font-family: Josefin Sans;
+    font-family: 300;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+/* Nav li */
+li {
+    padding: 2%;
+}
+
+/* Nav li hover */
+li:hover {
+    background-color: #fff;
+    color: #333;
+    transition: ease 0.8s;
+}
+/* Nav Links*/
+a.nav:link,
+a.nav:visited {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+/* PB main container */
+div.mainContainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ProjectBeta */
+h1.title {
+    font-family: Code Light;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #dddddd;
+    text-align: center;
+    letter-spacing: 2;
+    padding: 0;
+    margin: 0;
+}
+
+/* Beta */
+span.beta {
+    font-family: Code Bold;
+    font-weight: 100;
+    color: #f1f1f1;
+}
+
+/* Compete * Win * Repeat */
+h3.tagline {
+    width: 100%;
+    text-align: center;
+    font-family: Josefin Sans;
+    color: #dddddd;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*Update Notice*/
+div.updateNotice {
+    height: auto;
+    width: 100%;
+    background-color: #555555;
+    padding: 10px 0;	
+}
+
+p.updateNoticePara {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    color: #ddd;
+    width: 100%;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1.6;
+    word-spacing: 1.4;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;	
+}
+
+/* About Us */
+/* About Us Div */
+div.aboutUs {
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fafafa;
+}
+
+/* About Us */
+h1.aboutUsHeader {
+    font-family: Code Light;
+    font-size: 60px;
+    color: #555;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.6;
+}
+
+/* About Us Paragraph */
+p.aboutUsPara {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    color: #616161;
+    width: 50%;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1.6;
+    word-spacing: 1.4;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tournament */
+/* Tournament Div */
+div.tournament {
+    height: auto;
+    width: 100%;
+    background-color: #555555;
+    padding: 100px 0;
+}
+
+/* Tounrnament */
+h1.tournamentHeader {
+    font-family: Code Light;
+    font-size: 60px;
+    color: #fafafa;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.6;
+}
+
+/* Tournament Paragraph */
+p.tournamentPara {
+    font-family: Josefin Sans;
+    font-size: 20px;
+    color: #ddd;
+    width: 50%;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1.6;
+    word-spacing: 1.4;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sponsors */
+/* Sponsors Div */
+div.sponsors {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* Sponsors */
+h1.sponsorsHeader {
+    font-family: Code Light;
+    font-size: 60px;
+    color: steelblue;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.6;
+}
+
+/* Sponsor Logo Container */
+div.sponsorsContainer {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    text-overflow: clip;
+}
+
+/* Sponsor Logos */
+img.sponsorLogos {
+    width: 8%;
+    height: calc(width);
+    margin: 0;
+    padding: 0;
+}
+
+/* Social */
+/* Social Div */
+div.social {
+    padding: 35px 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #BA68C8;
+}
+
+/* Icons */
+span.icons {
+    font-family: Flaticon;
+    font-size: 30px;
+    display: inline;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    transition: ease 0.5s;
+}
+
+/* Icons hover */
+span.icons:hover {
+    color: #fff;
+    transition: ease 0.5s;
+}
+
+/* Icon links */
+a.icons:link,
+a.icons:hover,
+a.icons:visted,
+a.icons:visted:hover {
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #3e3e3e;
+    padding: 25px 0;
+}
+
+/* Footer content */
+h3.footerContent {
+    color: #fafafa;
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Sans;
+    font-weight: 300;
+}
+
+div.linkMain {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 150px 0 30px 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.about {
+    background-image: url(/assets/images/bgElse.jpg);
+}
+
+div.contact {
+    background-image: url(/assets/images//contact.jpg);
+}
+
+div.members {
+    background-image: url(/assets/images/bgElse.jpg);
+}
+
+div.about {
+    background-image: url(/assets/images/bgElse.jpg);
+}
+
+div.linkMainContainer {
+    width: 90%;
+    text-align: left;
+}
+
+h1.linkTitle {
+    color: #fff;
+    font-family: Code Light;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+div.info {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 100px 0;
+    background-color: #fafafa;
+}
+
+h1.infoHeader {
+    font-family: Code Light;
+    font-size: 40px;
+    color: #555;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.6;
+}
+
+p.infoPara {
+    font-family: Josefin Sans;
+    font-size: 22px;
+    color: #616161;
+    width: 70%;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 1.6;
+    word-spacing: 1.4;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;   
+}
+
+p.infoParaList {
+    font-family: Josefin Sans;
+    font-size: 22px;
+    color: #616161;
+    width: 70%;
+    text-align: justify;
+    line-height: 1.7;
+    letter-spacing: 1.6;
+    word-spacing: 1.4;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;   
+}
+
+@media only screen and (max-width: 768px) {
+    
+    span.navToggle {
+        top: 20px;    
+    }
+    
+    span.navClose {
+        top: 20px;
+    }
+    
+    h1.title {
+        font-size: 45px;
+    }
+    
+    h3.tagline {
+        font-size: 20px;
+    }
+    
+    div.aboutUs,
+    div.info {
+        padding: 50px 0;
+    }
+    
+    div.linkMain {
+        padding: 50px 0 10px 0;
+    }
+    
+    h1.aboutUsHeader,
+    h1.linkTitle,
+    h1.infoHeader {
+        font-size: 38px;
+    }
+    
+	p.updateNoticePara {
+		font-size: 20px;
+	}
+	
+    p.aboutUsPara,
+    p.infoPara,
+	p.infoParaList{
+        font-size: 20px;
+        width: 75%;
+    }
+    
+    div.tournament {
+        padding: 50px 0;
+    }
+    
+    h1.tournamentHeader {
+        font-size: 38px;
+    }
+    
+    p.tournamentPara {
+        font-size: 18px;
+        width: 75%;
+    }
+    
+    div.sponsors {
+        padding: 50px 0;
+    }
+    
+    h1.sponsorsHeader {
+        font-size: 38px;
+    }
+    
+    div.social {
+        padding: 15px 0;
+    }
+    
+    img.sponsorLogos {
+        width: 10%;
+        height: calc(width);
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    
+    ul {
+        font-size: 18px;    
+    }
+    
+    span.navToggle {
+        font-size: 25px;
+        top: 10px;
+    }
+    
+    span.navClose {
+        font-size: 25px;
+        top: 10px;
+    }
+    
+    h1.title {
+        font-size: 28px;
+    }
+    
+    h3.tagline {
+        font-size: 16px;
+    }
+    
+    div.aboutUs,
+    div.info {
+        padding: 35px 0;
+    }
+    
+    div.linkMain {
+        padding: 35px 0 15px 0;
+    }
+    
+    h1.aboutUsHeader,
+    h1.infoHeader,
+    h1.linkTitle {
+        font-size: 24px;
+    }
+	
+	p.updateNoticePara {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	
+    p.aboutUsPara,
+    p.infoPara,
+	p.infoParaList{
+        font-size: 16px;
+        width: 85%;
+		text-align: center;
+    }
+    
+    div.tournament {
+        padding: 35px 0;
+    }
+    
+    h1.tournamentHeader {
+        font-size: 24px;
+    }
+    
+    p.tournamentPara {
+        font-size: 16px;
+        width: 85%;
+    }
+    
+    div.sponsors {
+        padding: 35px 0;
+    }
+	
+	div.sponsorsContainer {
+		width: 90%;
+	}
+    
+    h1.sponsorsHeader {
+        font-size: 24px;
+    }
+    
+    div.social {
+        padding: 15px 0;
+    }
+    
+    img.sponsorLogos {
+        width: 12%;
+        height: calc(width);
+    }
+    
+}
